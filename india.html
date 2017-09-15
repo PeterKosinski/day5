@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>India Spice</title>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet"type="text/css"href="reset.css">
+		<style type="text/css">
+		
+		body{
+			background: url("images/background2.jpg");
+			display: flex;
+			flex-direction: column;
+		
+			align-items: center;
+		}
+		
+		nav{
+			font-family: roboto;
+			font-size: 20px;
+			margin: 30px auto;
+			width: 90%;
+			height: 500px;
+			flex-direction: column;
+			border-radius: 10px;
+			padding: 0;	
+			border-color: white;
+			display: flex;
+			
+		}
+				
+		a{
+			text-decoration: none;
+			color: white;
+			flex:1;
+			height: 30px;
+			font-family: Dosis;
+			padding:20px 20px 20px 20px;
+			text-align: center;
+			font-size: 2em;
+			border:1px solid white;
+			border-bottom: none;
+			border-right:none;
+			border-left: none;
+			
+		
+			
+		}
+		
+
+			#mes{
+				font-family: Dosis;
+				font-size: 4.5em;
+				text-align: center;
+				margin: 5px;
+				
+				
+			}
+			
+		
+			
+			.cards{
+				margin: 30px;
+				flex-direction:column;
+				
+        
+}
+			
+			.card{
+	
+	background-color: #bf2a32;
+	padding: 5px;
+	border-radius: 5px;
+	border: 3px solid #CC6600 ;
+	margin:20px;
+        
+}
+.card h2{
+        font-family: dosis;
+        font-size: 2em;
+}
+.card img{
+        width:100%;
+        border-radius: 5px;
+        }
+.card p{
+        font-family: dosis;
+        font-size: 22px;
+}
+
+#india{
+	background-color: #bf2a32;
+	padding: 20px;
+	border-radius: 5px;
+	border: 3px solid #CC6600 ;
+}
+			
+		
+
+		@media screen and (min-width: 700px){
+			nav{
+			display: flex;
+			flex-direction: row;
+			border: 0px;
+			height: 150px;
+			
+			}
+			a{
+		text-decoration: none;
+			color: white;
+			flex:1;
+			height: 25px;
+			font-family: Dosis;
+			padding:20px 0px 20px 0px;
+			text-align: center;
+			font-size: 2em;
+			border: 0px;
+			
+		
+
+			}
+			
+		
+		
+			#logoNav{
+				
+				
+			float:top;
+	
+			}
+			
+			
+			
+			section{
+				display: flex;
+				flex-direction: row;
+				align-content: flex-start;
+				
+				
+			}
+			
+			.cards{
+				margin: 30px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				
+        
+}
+.card{
+	width: 30%;
+	background-color: #bf2a32;
+	padding: 5px;
+	border-radius: 5px;
+	
+        
+}
+
+
+.card h2{
+        font-family: dosis;
+        font-size: 2em;
+}
+.card img{
+        width:100%;
+        }
+.card p{
+        font-family: dosis;
+        font-size: 22px;
+}
+			
+			
+			
+
+			
+		}
+		
+
+		</style>
+</head>
+<body >
+
+<div id="logoNav"><img src="images/logo.png"></div>
+
+	<nav>
+		
+			<a href="#">Home</a>
+			<a href="#">Menu</a>
+			<a href="#">Reservations</a>
+			<a href="#">Contact</a>
+			<a href="#">Photos</a>
+			
+		
+
+	</nav>
+	
+	<section>
+		<div class="box" id="mes">
+			<h2>
+				Welcome To India Spice. 
+			</h2>
+			
+
+<video controls= "controls" id="india" >
+    <source src="video/video.mp4"/>
+</video>
+			
+			
+		</div>
+		
+		
+	</section>
+	
+	<section class="cards">
+        <div class="card">
+                <img src="images/spices.jpg" alt="design pic">
+                <h2>Authentic Indian Spices Selected By Our world Famous Chefs</h2>
+                <br><p>We source only the rarest most desirable spices for our curry dishes</p></br>
+        </div> 
+        <div class="card">
+                <img src="images/curry.jpg" alt="design pic">
+                <h2>Orginal Recipes From The Heart Of India</h2>
+                <p>Our 100 year old recipes have survived generations and still bring smiles to millions of people</p>
+        </div> 
+</section>
+<footer>
+	
+</footer>
+
+</body>
+</html>
