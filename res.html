@@ -98,6 +98,37 @@
 
 }
 
+legend{
+            font-size: 2em;
+            font-family: Dosis;
+            background-color: #bf2a32;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            padding: 30px;
+            color: white;
+         }
+         
+          #container{
+            width: 550px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;}
+            
+         .bodyofform {
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color:orange;
+
+         }
+         
+        label.field {
+         	font-family:dosis;
+         }
+
 			
 		
 
@@ -133,51 +164,15 @@
 	
 			}
 			
-			
-			
-			section{
-				display: flex;
-				flex-direction: row;
-				align-content: flex-start;
-				
-				
-			}
-			
-			.cards{
-				margin: 30px;
-				display: flex;
-				flex-direction: row;
-				justify-content: space-around;
-				
-        
-}
-.card{
-	width: 30%;
-	background-color: #bf2a32;
-	padding: 5px;
-	border-radius: 5px;
-	
-        
-}
-
-
-.card h2{
-        font-family: dosis;
-        font-size: 2em;
-}
-.card img{
-        width:100%;
-        }
-.card p{
-        font-family: dosis;
-        font-size: 22px;
-}
-			
-			
-			
+			 #container{
+            width: 550px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
 
 			
-		}
+			
+		
 		
 
 		</style>
@@ -194,42 +189,26 @@
 			<a href="#">Contact</a>
 			<a href="#">Photos</a>
 			
-		
-
 	</nav>
 	
-	<section>
-		<div class="box" id="mes">
-			<h2>
-				Welcome To India Spice. 
-			</h2>
+	<div id="container">
+	<fieldset class="bodyofform">
+		<legend>Contact Form</legend>
+		<form action="mail.php" method="post">
+			<label for="name" class="field">Name : </label><input type="text" name="name"/><br>
+		    <label for="email" class="field">Email : </label><input type="email" name="email" placeholder="enter email"/><br>
+		    <label for="guests" class="field">No. Guests : </label><input type="range" name="guests" min="1" max="10"/><br>
+		    <label for="date" class="field">Date : </label><input type="date" name="date"/><br>
+		    <label for="time" class="field">Time : </label><input type="time" name="time"/><br>
+		    <label for="telephone" class="field">Mobile : </label><input type="telephone" name="telephone" patter="[0][8][3-9][0-9]{7}"/><br>
+			<inpu type="submit" name="submit"></input>
 			
+		</form>
+	</fieldset>
+	</div>
 
-<video controls= "controls" id="india" >
-    <source src="video/video.mp4"/>
-</video>
-			
-			
-		</div>
 		
-		
-	</section>
-	
-	<section class="cards">
-        <div class="card">
-                <img src="images/spices.jpg" alt="design pic">
-                <h2>Authentic Indian Spices Selected By Our world Famous Chefs</h2>
-                <br><p>We source only the rarest most desirable spices for our curry dishes</p></br>
-        </div> 
-        <div class="card">
-                <img src="images/curry.jpg" alt="design pic">
-                <h2>Orginal Recipes From The Heart Of India</h2>
-                <p>Our 100 year old recipes have survived generations and still bring smiles to millions of people</p>
-        </div> 
-</section>
-<footer>
-	
-</footer>
+
 
 </body>
 </html>
